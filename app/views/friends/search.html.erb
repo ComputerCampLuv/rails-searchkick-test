@@ -1,0 +1,11 @@
+Searching... for that something that I'll never find. In another place, another time!
+
+<% if @friends.length == 0 %>
+  <h4>No results matched your search - spell correctly or get <em>more</em> friends</h4>
+<% end %>
+
+<% @friends.each do |friend| %>
+  <p><%= friend.name %></p>
+<% end %>
+
+<p><%= link_to 'Back', root_path %></p>
